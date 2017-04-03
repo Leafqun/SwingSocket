@@ -1,0 +1,12 @@
+package com.Leafqun.yqFrame;
+
+import javax.swing.*;
+
+import java.awt.*;
+
+public class yqDialog extends JDialog{
+	public yqDialog(MyFrame frame){
+			super(frame,"yqDialog",true);
+			Container container=
+		}
+}

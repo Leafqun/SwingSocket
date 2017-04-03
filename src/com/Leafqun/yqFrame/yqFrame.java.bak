@@ -1,0 +1,19 @@
+package com.Leafqun.yqFrame;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class yqFrame {
+	//JFrame----Window is made up of Container and elements(×é¼þ)
+	public yqFrame(String content){
+		JFrame myFrame=new JFrame(content);//Instantiate a JFrame object
+		Container myContainer=myFrame.getContentPane();//Obtain a container
+		JLabel myLabel=new JLabel("Hello World");//Create a label as a element
+		myLabel.setHorizontalAlignment(SwingConstants.CENTER);//Make the text centered on the label 
+		myContainer.add(myLabel);//Add label into container
+		myContainer.setBackground(Color.white);//Set background color
+		myFrame.setVisible(true);//Make the Window visible
+		myFrame.setSize(500,250);//Set the Window size
+		myFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//Set the closing way of the window
+	}
+}
